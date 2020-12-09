@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>even odd</title>
+    </head>
+<body>
+    <h2 style="text-align: center;">odd r even</h2>
+
+    <label>Enter Number</label><br/>
+    <input type="number" name="" id="oddeven" onkeyup="isCheck()"><span id="showmsg"></span>
+
+<script>
+
+    function isCheck(){
+        var num =document.getElementById('oddeven').value;
+        //alert(num);
+        if((num % 2) ===0){
+    document.getElementById('showmsg').innerHTML=""
+
+    }
+    </script>
+</body>
+</html> 

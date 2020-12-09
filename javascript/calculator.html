@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Simple calulator</title>
+<script type ="text/javascript">
+    function calc() {
+
+        var n1 = parseFloat (document.getElementById("n1").value)
+        var n1 = parseFloat (document.getElementById("n1").value)
+     
+      var op =document.getElementById("opr").value
+
+      if(op === "+"{
+
+        document.getElementById('result').value =n1+n2;
+      })
+
+      
+      if(op === "-"){
+
+        document.getElementById('result').value =n1-n2;
+      })
+      
+      if(op === "x"){
+
+        document.getElementById('result').value =n1xn2;
+      })
+      
+      if(op === "/"){  document.getElementById('result').value =n1/n2;
+      })
+
+      if(op === "%"){
+
+        document.getElementById('result').value =n1%n2;
+      })
+      
+
+    }
+</script>
+</head>
+<body>
+    <h1>
+        Calculator
+    </h1>
+    First Number: &nbps;<input type="text" id="n1" maxlength ="7">
+    <br><br>
+    Second Number: &nbps;<input type="text" id="n2" maxlength ="7">
+    <br><br>
+    <select id ="opr">
+        <option value ="+">+</option>
+        <option value ="-">-</option>
+        <option value ="x">x</option>
+        <option value ="/">/</option>
+        <option value ="%">%</option>
+        </select>
+        <input type ="Button" value = "=" onclick="calc();">
+        <br>
+        <br>
+
+        Answer: <input type ="text" id="result"><br><br>
+
+        
+
+    
+
+</body>
+</html>
