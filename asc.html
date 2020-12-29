@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <p>ascending order.</p>
+<button onclick="myFunction()">click to sort</button>
+
+<p id="sort"></p>
+
+<script>
+var numbers = ["45", "68", "45", "55","43","15","13"];
+document.getElementById("sort").innerHTML = numbers;
+
+function myFunction() {
+  numbers.sort();
+  document.getElementById("sort").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>

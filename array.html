@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>check array</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+
+    <script>
+        function SEARCH()
+		{
+			var myArr = [1,3,5,7,4,19,25,36,47,58];
+        
+            var txt = document.getElementById('txt').value;
+			//alert(typeof(txt));
+			var val = parseInt(txt) // to convert string to number
+			//alert(typeof(val));
+			var ex  = myArr.includes(val);
+			//alert(ex);
+            if(ex)
+            {
+                alert('Number Exists in array ');
+            }
+            else 
+            {
+                alert("Number does not exists in array");
+            } 
+		}
+    </script>
+
+
+</head>
+<body>
+    <input type="text" name="" id="txt">
+    <button onclick="SEARCH();">SEARCH</button>
+    <p id="ary"></p>
+
+    
+    
+</body>
+</html>

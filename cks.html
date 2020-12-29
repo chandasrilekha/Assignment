@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            cookies
+        </title>
+        <script>
+            function clicked() {
+                console.log("Function clicked");
+                /*
+                expires
+                domain
+                path
+                secure
+                name=value
+                */
+               var name = document.myform.name.value;
+               console.log(name);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            Enter cookie info : <input type="text" name="name">
+            <input type = "button" value="submit" onclick="clicked()" />
+        </form>
+    </body>
+</html>

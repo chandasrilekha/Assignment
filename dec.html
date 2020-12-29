@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>descending order.</p>
+<button onclick="myFunction()">click to sort</button>
+
+<p id="sort"></p>
+
+<script>
+// Create and display an array:
+var numbers = ["45", "68", "45", "55","43","15","13"];
+document.getElementById("sort").innerHTML = numbers;
+
+function myFunction() {
+  // First sort the array
+  numbers.sort();
+  // Then reverse it:
+  numbers.reverse();
+  document.getElementById("sort").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>

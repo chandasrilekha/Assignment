@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="input" type="text">
+<input id="range" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+
+<div id="disp"></div>
+
+<p id="message"></p>
+
+<script>
+function myFunction() {
+  message = document.getElementById("message");
+ 
+  x = document.getElementById("input").value;
+  y = document.getElementById("range").value;
+
+  try { 
+    if(x == "") {
+        throw "is Empty";
+    }
+           
+    else
+    {
+        for(let i = 1; i <= y; i++) {
+            const result = i * x;
+            disp.innerHTML +=` <tr> 
+                        <td>${x}</td>     
+                        <td>*</td>    
+                        <td>${i}</td> 
+                        <td>${result}</td>  </br>    
+                      </tr>`;
+        }
+    }
+
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+}
+
+</script>
+
+</body>
+</html>

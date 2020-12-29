@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transparent Login Form</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<body>
+  
+        
+      <div class="container">
+          <div class="row myrow">
+            <div class="col-md-6 mycol">
+
+          
+        
+            <form name="myForm" onsubmit="return validateForm()" action="travelweb">
+                <div class="mb-3">
+                    <h1>LOGIN</h1>
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" name="fname" aria-describedby="emailHelp">
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label" name="password">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <span id = "message" style="color:red"> </span>
+                </div>
+              
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-primary">Registration</button>
+              </form>
+            </div>
+            </div>
+            </div>
+        </form>
+
+        
+        </div>
+        <script>
+            function validateForm() {
+            var pw = document.getElementById("exampleInputPassword1").value;  
+            var firstname = document.forms["myForm"]["fname"].value;
+            if (firstname == "") {
+              alert("Name must be filled out");
+             
+              return false;
+            }
+            if (pw == "") {
+              alert("password must be filled out");
+             
+              return false;
+            }
+
+            if(firstname=="sri" && pw=="sri123"){
+                alert("success");
+            }else{
+                alert("Invalid Username and password")
+            }
+        }
+            </script>
+</body>
+<style>
+    body{
+    background: url('back.jpg') no-repeat; 
+}
+.myrow{
+    margin-left: 380px;
+    margin-top: 200px;
+}
+h1{
+    text-align: center;
+    top: 50px;
+}
+
+
+
+</style>
+</html>
